@@ -100,8 +100,8 @@ const ProductDetailCard = ({ product }) => {
               Type: <strong>{product?.type}</strong>
             </p>
             <p className="my-[10px]">
-              Sizes: {product?.size.map((size) => (
-                <strong onClick={() => setSizes(size)} className={`"py-2 px-[10px] rounded-sm mx-[4px] bg-[#EBEBEB]"`}>{size}</strong>
+              Sizes: {product?.size.map((size , index) => (
+                <strong key={index} onClick={() => setSizes(size)} className={`"py-2 px-[10px] rounded-sm mx-[4px] bg-[#EBEBEB]"`}>{size}</strong>
               ))}
             </p>
           </div>

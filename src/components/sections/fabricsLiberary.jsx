@@ -1,7 +1,7 @@
 "use client";
 
 import "./style.css";
-import section3 from "@/assets/images/sectionImages/section3.webp";
+import section3 from "@/assets/images/sectionImages/section3.jpg";
 
 const FabricsLiberary = () => {
   return (
@@ -10,26 +10,25 @@ const FabricsLiberary = () => {
         <div className="fabric-text-wrap">
           <h2>Fabric Library</h2>
           <p>
-            Welcome to the Fiztees Library—an exclusive collection of our
-            finest unstitched fabrics. We’ve curated this space to help you
-            explore, touch, and experience the quality of our premium cotton and
-            wash n wear materials.
+            
+            Welcome to the Fiztees Library a curated collection of our most
+            exceptional fabrics. This space is designed to give you a closer
+            look at the premium quality of our materials, from breathable cotton
+            to versatile wash-and-wear options.
           </p>
           <p>
-            At Hannan Fabrics, we understand that selecting the right fabric is
-            an art. Our library offers a seamless way to discover our diverse
-            range, whether you’re looking for the soft feel of our Shan-e-Azwaan
-            collection or the refined elegance of our Heritage collection.
+            
+            At Fiztees, we believe in the art of fabric selection.
+            Our library offers an immersive experience, allowing you to explore
+            the variety of textures, finishes, and styles we offer.
           </p>
           <p>
-            Explore with confidence and find the fabric that resonates with your
-            unique style.
+            
+            Embark on your fabric journey with us and discover the perfect
+            material to bring your vision to life.
           </p>
         </div>
-        <img
-          src={section3.src}
-          alt=""
-        />
+        <img src={section3.src} alt="" />
       </div>
     </div>
   );

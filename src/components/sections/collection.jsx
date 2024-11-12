@@ -1,32 +1,32 @@
 "use client";
 
 import CollectionCard from "@/components/UI/collectionCard";
-import collection1 from '../../assets/images/productImages/heritage-1.jpg';
-import collection2 from "@/assets/images/collections/collection2.png";
-import collection3 from "@/assets/images/collections/collection3.webp";
+import collection1 from "@/assets/images/collections/t-shirt1.png";
+import collection2 from "@/assets/images/collections/bottom1.png";
+import collection3 from "@/assets/images/collections/graphic1.png";
 
 
 
 const Collection = () => {
     const collections = [{
         _id: 1,
-        title: "t-shirt",
+        title: "T Shirts",
         alt: "t-shirt",
         image: collection1.src,
         link: "/collection/t-shirt",
       },
       {
         _id: 2,
-        title: "Shan-e-Azwaan",
-        alt: "Shan-e-Azwaan",
+        title: "Bottoms",
+        alt: "bottom",
         image: collection2.src,
-        link: "/collection/shan-e-azwaan",
+        link: "/collection/bottom",
       }, {
         _id: 3,
-        title: "t-shirt",
-        alt: "t-shirt",
+        title: "Oversize / Graphic",
+        alt: "oversize-graphic",
         image: collection3.src,
-        link: "/collection/t-shirt",
+        link: "/collection/oversized",
       },
       ]
   return (

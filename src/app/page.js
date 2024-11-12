@@ -17,10 +17,10 @@ export default function Home() {
     <Hero/>
     <Collection/>
     <Display/>
-    <ProductsSection maxLength={4} collection={'all'} name={"Best Sellers"}/>
+    <ProductsSection maxLength={4} collection={'t-shirt'} name={"Best Sellers"}/>
     <CollectionAbout/>
+    <ProductsSection maxLength={4} collection={'all'} name={"Best Sellers"}/>
     <FabricsLiberary/>
-    <AddReviews/>
     <Contact/>
     </div>
   );

@@ -1,3 +1,4 @@
+"use client";
 import { useSelector } from "react-redux";
 import Loader from "./loader";
 import ButtonLoader from "./buttonLoader";

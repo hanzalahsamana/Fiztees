@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 const FormInput = ({ type, placeholder , handleChange , field , formData , errors }) => {

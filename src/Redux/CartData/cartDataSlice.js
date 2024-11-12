@@ -33,8 +33,7 @@ export const addCartData = createAsyncThunk(
   "cartData/addCartData",
   async ({ _id, quantity }, { rejectWithValue }) => {
     try {
-      const cartID = localStorage.getItem("cartId");
-      const response = await addCartDataApi(_id, quantity , cartID);
+      const response = await addCartDataApi(_id, quantity , 'efeaeee8-7b80-4b22-91fb-93de7728a1e2');
       return response.products;
     } catch (error) {
       return rejectWithValue(error.message);
@@ -46,8 +45,7 @@ export const deleteCartData = createAsyncThunk(
   "cartData/deleteCartData",
   async ( productId, { rejectWithValue }) => {
     try {
-      const cartID = localStorage.getItem("cartId");
-       const updatedState = await deleteCartDataApi(cartID , productId);
+       const updatedState = await deleteCartDataApi('efeaeee8-7b80-4b22-91fb-93de7728a1e2' , productId);
        console.log(updatedState);
        
       return updatedState.products;

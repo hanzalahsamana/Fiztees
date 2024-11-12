@@ -33,13 +33,9 @@ export const deleteCartDataApi = async (cartId, productId) => {
     let url = `${BASE_URL}/deleteCartProduct?id=${cartId}`;
 
     if (productId) {
-      console.log("::::::::::::", productId);
       url += `&&productId=${productId}`;
     }
     const response = await axios.delete(url);
-    console.log(response.data,"(●'◡'●)");
-    
-
     return response.data;
   } catch (error) {
     toast.error(error.message);

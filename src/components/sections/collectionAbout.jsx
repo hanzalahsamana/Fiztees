@@ -18,15 +18,13 @@ const CollectionAbout = () => {
         </div>
       </div>
       <div className="text-wrap">
-        <h1 className="text-[25px]">The Luxury Cotton</h1>
+        <h1 className="text-[25px]">The Pure Essence</h1>
         <p>
-          Discover the luxury of 100% pure cotton with our Shan-e-Azwaan
-          collection. Designed for those who appreciate comfort and quality,
-          this collection offers a soft and breathable fabric that’s perfect for
-          any season. Elevate your wardrobe with the timeless elegance and
-          unmatched comfort of Shan-e-Azwaan. Perfect for everyday wear, this
-          collection reflects the essence of tradition combined with modern
-          style.
+          Experience the perfect blend of comfort and style with our T-shirt collection.
+          Crafted from 100% pure cotton, each shirt is designed to offer a soft, breathable fit, ensuring
+          you stay cool and comfortable all day long. Ideal for both casual outings and everyday wear, these 
+          t-shirts exude timeless elegance with a modern twist. Elevate your wardrobe with the luxury of 
+          pure cotton and enjoy the ultimate in comfort and quality with every wear.
         </p>
         <Link href={'/products'} className="flex justify-center py-[15px] w-full mt-6 bg-black text-[#e6e6e6] text-[16px]  transition-all duration-300 hover:scale-105">
           Shop Now

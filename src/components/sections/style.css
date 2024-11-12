@@ -159,12 +159,11 @@
 .fabric-cutting-container h2 {
   margin: 5px 0px;
   font-weight: 700;
-  font-size: 3vw !important;
+  font-size: 25px;
 }
 
 .fabric-cutting-container p {
   margin: 5px 0px;
-  font-size: 1.2vw;
 }
 
 @media (max-width: 800px) {
@@ -461,7 +460,7 @@ predictive-search[loading] .predictive-search {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 5% 50px 5%;
+  padding: 0px 5% 50px 10%;
 
   width: 100%;
   gap: 40px;
@@ -607,20 +606,19 @@ predictive-search[loading] .predictive-search {
 }
 
 .buttons .btn {
-  background-color: #b82322;
+  background-color: #000000;
   color: #fff;
   border: none;
   padding: 14px 24px;
   font-size: 14px;
   cursor: pointer;
   font-weight: 600;
-  transition: background-color 0.3s;
+  transition: ease-out 0.2s;
   text-decoration: none;
 }
 
 .buttons .btn:hover {
-  color: white;
-  background-color: #852423;
+  transform: scale(1.1);
 }
 
 @media (max-width: 800px) {
@@ -637,6 +635,9 @@ predictive-search[loading] .predictive-search {
   .textContainer {
     width: 100%;
     padding-left: 10px;
+    padding-top: 30px;
+    align-items: center;
+    text-align: center;
   }
 }
 

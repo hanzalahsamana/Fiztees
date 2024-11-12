@@ -1,9 +1,11 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import 'flowbite';
 import banner1 from "@/assets/images/displayImages/banner1.jpg";
 import banner2 from "@/assets/images/displayImages/banner2.jpg";
-
+// import 'flowbite';
+if (typeof window !== "undefined") {
+    require('flowbite');
+}
 
 const Hero = () => {
     const [videoSrc, setVideoSrc] = useState("/videos/WebsiteBannerVideo.mp4");
@@ -14,7 +16,7 @@ const Hero = () => {
                 setVideoSrc("/videos/MobileBannerVideo.mp4");
             } else {
                 setVideoSrc("/videos/WebsiteBannerVideo.mp4");
-            }   
+            }
         };
 
         updateVideoSrc();
