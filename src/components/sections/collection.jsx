@@ -30,11 +30,15 @@ const Collection = () => {
       },
       ]
   return (
+    <div>
+
+      <h1 className="text-center mt-3 font-bold">Collections</h1>
     <div className="grid grid-cols-3 max-[700px]:grid-cols-1 gap-5 m-6">
       {collections?.map((collection) => (
         <CollectionCard key={collection._id} collection={collection} />
       ))}
     </div>
+      </div>
   );
 };
 

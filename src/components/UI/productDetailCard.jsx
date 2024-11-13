@@ -36,7 +36,7 @@ const ProductDetailCard = ({ product }) => {
   return (
     <div className={styles.container}>
       <div className={`max-[900px]:flex-col ${styles.productSection}`}>
-        <div className={styles.productImages}>
+        <div className={`${styles.productImages} min-[900px]:w-[40%] `}>
           <div className=" aspect-[1/1] overflow-hidden">
             <img
               src={product?.images[mainImage]}
@@ -44,7 +44,7 @@ const ProductDetailCard = ({ product }) => {
               className={`max-[900px]:max-w-full max-w-[450px] object-cover ${styles.mainImage}`}
             />
           </div>
-          <div className={styles.thumbnailContainer}>
+          <div className={`${styles.thumbnailContainer}`}>
             {product.images.map((image, index) => (
               <img
                 key={index}
@@ -100,7 +100,7 @@ const ProductDetailCard = ({ product }) => {
               Type: <strong>{product?.type}</strong>
             </p>
             <p className="my-[10px]">
-              Sizes: {product?.size.map((size , index) => (
+              Sizes: {product?.size.map((size, index) => (
                 <strong key={index} onClick={() => setSizes(size)} className={`"py-2 px-[10px] rounded-sm mx-[4px] bg-[#EBEBEB]"`}>{size}</strong>
               ))}
             </p>
@@ -109,9 +109,10 @@ const ProductDetailCard = ({ product }) => {
           <div className={styles.buttons}>
             <button
               onClick={handleAddToCart}
-              className="py-[15px] w-full mt-3 bg-white border-black border-[2px] text-[#000000] text-[16px]  transition-all duration-300 hover:scale-105"
+              className="flex justify-center items-center py-[15px] w-full mt-3 bg-white border-black border-[2px] text-[#000000] text-[16px]  transition-all duration-300 hover:scale-105"
             >
-              {loading ? <ButtonLoader /> : 'Add To Cart'}
+              {loading ? <div className="loader border-2 border-t-blue-500 rounded-full w-5 h-5 animate-spin"></div>
+                : 'Add To Cart'}
             </button>
             <button onClick={() => {
               handleAddToCart();

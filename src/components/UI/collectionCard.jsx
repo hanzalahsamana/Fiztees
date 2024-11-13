@@ -6,7 +6,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const CollectionCard = ({collection}) => {
   return (
-    <Link href={collection?.link}>
+    <Link href={collection?.link} className='decoration-transparent text-black'>
     <div className='rounded-[20px] cursor-pointer'>
         <div className='rounded-md overflow-hidden bg-[#d5d5d5]'>
         <img 
@@ -17,7 +17,7 @@ const CollectionCard = ({collection}) => {
 
         </div>
         <div className='flex justify-center items-center gap-4 pt-2'>
-            <h1 className='text-[20px]'>{collection?.title}</h1>
+            <h1 className='text-[20px] text-black'>{collection?.title}</h1>
             <FaArrowRightLong/>
         </div>
     </div>

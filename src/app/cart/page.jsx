@@ -30,7 +30,7 @@ const Cart = () => {
           <div>
             <div className="flex w-full justify-between items-center mb-3">
               <h1 className="text-[30px]">Your Cart</h1>
-              <Link className="text-[15px] underline" href={'/products'}>Continue Shopping</Link>
+              <Link className="text-[15px] underline text-black" href={'/products'}>Continue Shopping</Link>
             </div>
             <div className='flex justify-between' >
               <h1 className="my-[20px] pl-[15px] text-[20px] w-1/2">Product</h1>

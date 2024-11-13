@@ -6,7 +6,7 @@ const ProductRecieptCard = ({ product }) => {
         <div className='flex items-center justify-between border-b py-[15px]'>
             <div className='flex gap-4 items-center'>
                 <div className='relative'>
-                    <img className='w-[70px] h-[70px] max-w-[unset] rounded-md ' src={product?.images[0]} alt={product?.alt} />
+                    <img className='w-[70px] h-[70px] max-w-[unset] rounded-md object-cover' src={product?.images[0]} alt={product?.alt} />
                     <div className='flex items-center justify-center rounded-full bg-[#666666] text-white text-[12px] absolute right-[-7px] top-[-7px] w-[20px] h-[20px] '>{product.quantity}</div>
                 </div>
                 <div>

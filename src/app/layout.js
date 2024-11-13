@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Layout from "@/components/layout/layout";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const geistSans = localFont({
   src: "../assets/fonts/GeistVF.woff",
@@ -30,7 +31,6 @@ const RootLayout = ({ children }) => {
         >
           <Layout chidren={children} />
           <ToastContainer />
-          <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
         </body>
       </html>
     </Provider>

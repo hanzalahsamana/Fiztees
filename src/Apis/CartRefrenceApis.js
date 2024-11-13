@@ -8,7 +8,7 @@ export const setCartDataApi = async (cartId) => {
     const response = await axios.get(`${BASE_URL}/getCartData?id=${cartId}`);
     return response.data[0];
   } catch (error) {
-    toast.error(error.message, "yeah Api file ka he");
+    return error;
   }
 };
 
@@ -22,7 +22,7 @@ export const addCartDataApi = async (productId, quantity , cartId) => {
     localStorage.setItem("cartId", response.data.cartId);
     return response.data;
   } catch (error) {
-    toast.error(error);
+    return error;
   }
 };
 
@@ -38,6 +38,6 @@ export const deleteCartDataApi = async (cartId, productId) => {
     const response = await axios.delete(url);
     return response.data;
   } catch (error) {
-    toast.error(error.message);
+    return error;
   }
 };

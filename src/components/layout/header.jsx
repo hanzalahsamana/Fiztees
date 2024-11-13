@@ -35,26 +35,26 @@ const Header = () => {
         </Link>
 
         <nav className="hidden md:flex gap-3 space-x-4">
-          <Link className={`text-[18px] cursor-pointer hover:opacity-[0.6] ${pathname === '/' ? 'underline font-semibold' : ''}`} href="/" prefetch={true}>
+          <Link className={`text-[18px] text-black cursor-pointer hover:opacity-[0.6] ${pathname === '/' ? 'underline font-semibold' : ''}`} href="/" prefetch={true}>
             Home
           </Link>
-          <Link className={`text-[18px] cursor-pointer hover:opacity-[0.6] ${pathname === '/collection/t-shirt' ? 'underline font-semibold' : ''}`} href="/collection/t-shirt" prefetch={true}>
+          <Link className={`text-[18px] text-black cursor-pointer hover:opacity-[0.6] ${pathname === '/collection/t-shirt' ? 'underline font-semibold' : ''}`} href="/collection/t-shirt" prefetch={true}>
             T-shirts
           </Link>
-          <Link className={`text-[18px] cursor-pointer hover:opacity-[0.6] ${pathname === '/collection/bottom' ? 'underline font-semibold' : ''}`} href='/collection/bottom' prefetch={true}>
+          <Link className={`text-[18px] text-black cursor-pointer hover:opacity-[0.6] ${pathname === '/collection/bottom' ? 'underline font-semibold' : ''}`} href='/collection/bottom' prefetch={true}>
             Bottoms
           </Link>
-          <Link className={`text-[18px] cursor-pointer hover:opacity-[0.6] ${pathname === '/products' ? 'underline font-semibold' : ''}`} href="/products" prefetch={true}>
+          <Link className={`text-[18px] text-black cursor-pointer hover:opacity-[0.6] ${pathname === '/products' ? 'underline font-semibold' : ''}`} href="/products" prefetch={true}>
             Products
           </Link>
-          <Link className={`text-[18px] cursor-pointer hover:opacity-[0.6] ${pathname === '/contact' ? 'underline font-semibold' : ''}`} href="/contact" prefetch={true}>
+          <Link className={`text-[18px] text-black cursor-pointer hover:opacity-[0.6] ${pathname === '/contact' ? 'underline font-semibold' : ''}`} href="/contact" prefetch={true}>
             Contact
           </Link>
         </nav>
 
         <div className="flex items-center space-x-4 text-[24px]">
           <button className=" hover:text-yellow-500 relative">
-            <Link href="/cart">
+            <Link href="/cart" className='text-black'>
               <HiOutlineShoppingBag />
               <span className="absolute text-black text-[12px] w-[18px] h-[18px] rounded-full bg-white right-[-4px] bottom-[-6px] ">{totalQuantity}</span>
             </Link>
@@ -64,37 +64,37 @@ const Header = () => {
       </div>
 
       <div className={`max-w-[1500px] md:hidden transition-all duration-3000 ease-in-out ${isOpen ? 'max-h-[260px]' : 'max-h-[0px] overflow-hidden'}`}>
-        <nav className="flex flex-col gap-6 p-[30px] py-4">
-          <Link href={"/"} prefetch={true}>
-            <p className={`text-[18px] cursor-pointer hover:opacity-[0.6] ${pathname === '/' ? 'underline font-semibold' : ''}`} onClick={() => {
+        <nav className="flex flex-col gap-2 p-[30px] py-4">
+          <Link href={"/"} prefetch={true} className='decoration-transparent'>
+            <p className={`text-[18px] text-black  cursor-pointer hover:opacity-[0.6] ${pathname === '/' ? 'underline font-semibold' : ''}`} onClick={() => {
               toggleMenu()
             }}>
               Home
             </p>
           </Link>
-          <Link href={"/collection/t-shirt"} prefetch={true}>
-            <p className={`text-[18px] cursor-pointer hover:opacity-[0.6] ${pathname === '/collection/t-shirt' ? 'underline font-semibold' : ''}`} onClick={() => {
+          <Link href={"/collection/t-shirt"} prefetch={true} className='decoration-transparent'>
+            <p className={`text-[18px] text-black  cursor-pointer hover:opacity-[0.6] ${pathname === '/collection/t-shirt' ? 'underline font-semibold' : ''}`} onClick={() => {
               toggleMenu()
             }}>
               T-shirt
             </p>
           </Link>
-          <Link href={"/collection/shan-e-azwaan"} prefetch={true}>
-            <p className={`text-[18px] cursor-pointer hover:opacity-[0.6] ${pathname === '/collection/shan-e-azwaan' ? 'underline font-semibold' : ''}`} onClick={() => {
+          <Link href={"/collection/bottom"} prefetch={true} className='decoration-transparent'>
+            <p className={`text-[18px] text-black  cursor-pointer hover:opacity-[0.6] ${pathname === '/collection/bottom' ? 'underline font-semibold' : ''}`} onClick={() => {
               toggleMenu()
             }}>
-              Shan-e-Azwaan
+              Bottom
             </p>
           </Link>
-          <Link href={"/products"} prefetch={true}>
-            <p className={`text-[18px] cursor-pointer hover:opacity-[0.6] ${pathname === '/products' ? 'underline font-semibold' : ''}`} onClick={() => {
+          <Link href={"/products"} prefetch={true} className='decoration-transparent'>
+            <p className={`text-[18px] text-black  cursor-pointer hover:opacity-[0.6] ${pathname === '/products' ? 'underline font-semibold' : ''}`} onClick={() => {
               toggleMenu()
             }}>
               Products
             </p>
           </Link >
-          <Link href={"/contact"} prefetch={true}>
-            <p className={`text-[18px] cursor-pointer hover:opacity-[0.6] ${pathname === '/contact' ? 'underline font-semibold' : ''}`} onClick={() => {
+          <Link href={"/contact"} prefetch={true} className='decoration-transparent'>
+            <p className={`text-[18px] text-black  cursor-pointer hover:opacity-[0.6] ${pathname === '/contact' ? 'underline font-semibold' : ''}`} onClick={() => {
               toggleMenu()
             }}>
               Contact

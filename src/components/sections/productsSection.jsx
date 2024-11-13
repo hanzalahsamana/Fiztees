@@ -26,7 +26,7 @@ const ProductsSection = ({ maxLength, collection, name }) => {
                     .slice(0, maxLength)
                     .map((product) => (
                         <Link
-                            className="cursor-pointer"
+                            className="cursor-pointer text-black decoration-transparent"
                             key={product._id}
                             href={`/products/${product._id}`}
                         >
